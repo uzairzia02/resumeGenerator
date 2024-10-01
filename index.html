@@ -1,0 +1,207 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to my Resume Generator</h1>
+    </div>
+
+    <form id="resumeForm">
+      <div id="personal-Information-div">
+        <h2 class="heading">Personal Information</h2>
+        <div id="personal-Information">
+          <div class="name">
+            <label for="Name">Name</label><br />
+            <input
+              type="text"
+              placeholder="Enter your Name"
+              name="name"
+              id="name"
+              
+            />
+            <br /><br />
+          </div>
+          <div class="address">
+            <label for="address">Address</label> <br />
+            <input
+              type="text"
+              placeholder="Enter your Address"
+              name="address"
+              id="address"
+              
+            /><br /><br />
+          </div>
+          <div class="contact">
+            <label for="contact">Contact</label> <br />
+            <input
+              type="text"
+              placeholder="Enter your Mobile #"
+              name="contact"
+              id="contact"
+              
+            /><br /><br />
+          </div>
+          <div class="email">
+            <label for="email">Email</label> <br />
+            <input
+              type="text"
+              placeholder="Enter your email"
+              name="email"
+              id="email"
+              
+            /><br /><br />
+          </div>
+          <div class="city">
+            <label for="city">City</label> <br />
+            <input
+              type="text"
+              placeholder="Enter your city"
+              name="city"
+              id="city"
+              
+            /><br /><br />
+          </div>
+
+          <div class="addPicture">
+            <label for="picture">
+              <input type="file" name="picture" id="picture" />
+              <br /><br />
+            </label>
+          </div>
+        </div>
+      </div>
+      <button id="togglePersonalInformation" type="button">
+        Hide Professional Information
+      </button>
+
+      <div id="professionalSummaryDiv">
+        <h2>Professional Summary</h2>
+        <div class="professionalSummary">
+          <textarea
+            name="professionalSummary"
+            id="professionalSummary"
+            placeholder="Enter your professional Summary"
+          ></textarea>
+          <br />
+        </div>
+      </div>
+      <button id="toggleProfessionalSummary" type="button">
+        Hide Professional Summary
+      </button>
+
+      <div id="skillsDiv">
+        <h2>Skills</h2>
+        <div class="skillsDetails">
+          <label for="skill" class="skill">Skill 1 </label>
+          <input type="text" placeholder="Skill 1" class="skill1" />
+          <label for="skill" class="skill">Skill 2 </label>
+          <input type="text" placeholder="Skill 2" class="skill2" />
+          <label for="skill" class="skill">Skill 3 </label>
+          <input type="text" placeholder="Skill 3" class="skill3" />
+          <label for="skill" class="skill">Skill 4 </label>
+          <input type="text" placeholder="Skill 4" class="skill4" />
+        </div>
+        <button id="addSkills" type="button">Add Skills</button>
+      </div>
+      <button id="toggleSkills" type="button">Hide Skills Menu</button>
+      
+      <div id="educationDiv">
+        <h2>Education</h2>
+        <div class="educationDetails">
+          <div class="matriculation">
+            <label for="matriculationDegreeName" class="matriculationDegreeName">Matriculation / equivalent</label>
+            <input type="text" class="degreeNameMatric" placeholder="Degree Name" >
+            <label for="instituteName" class="instituteName">Institute Name</label>
+            <input type="text" class="instituteNameMatric" placeholder="Institute Name" >
+            <label for="matricDegreeStartYear" class="matricDegreeStartYear">Start Year</label>
+            <input type="date" class="startYearMatric" >
+            <label for="matricDegreeEndYear" class="matricDegreeEndYear">End Year</label>
+            <input type="date" class="endYearMatric" >   <br>   
+          </div>
+          <div class="intermediate">
+            <label for="intermediateDegreeName" class="intermediateDegreeName">Intermediate / equivalent</label>
+            <input type="text" class="degreeNameInter" placeholder="Degree Name">
+            <label for="instituteName" class="instituteName">Institute Name</label>
+            <input type="text" class="instituteNameInter" placeholder="Institute Name">
+            <label for="InterDegreeStartYear" class="InterDegreeStartYear">Start Year</label>
+            <input type="date" class="startYearInter">
+            <label for="InterDegreeEndYear" class="InterDegreeEndYear">End Year</label>
+            <input type="date" class="endYearInter">   <br>
+          </div>
+          <div class="bachelorDegree">
+            <label for="bachelorDegreeName" class="bachelorDegreeName">Bachelor's / equivalent</label>
+            <input type="text" class="degreeNameBachelors" placeholder="Degree Name">
+            <label for="instituteName" class="instituteName">Institute Name</label>
+            <input type="text" class="instituteNameBachelors" placeholder="institute Name">
+            <label for="bachelorsDegreeStartYear" class="bachelorsDegreeStartYear">Start Year</label>
+            <input type="date" class="startYearBachelors">
+            <label for="bachelorsDegreeEndYear" class="bachelorsDegreeEndYear">End Year</label>
+            <input type="date" class="endYearBachelors">   <br>  
+          </div>
+          <div class="masterDegree">
+            <label for="mastersDegreeName" class="mastersDegreeName">Master's / M.Phill / equivalent</label>
+            <input type="text" class="degreeNameMasters" placeholder="Degree Name">
+            <label for="instituteName" class="instituteName">Institute Name</label>
+            <input type="text" class="instituteNameMasters" placeholder="Institute Name">
+            <label for="mastersDegreeStartYear" class="mastersDegreeStartYear">Start Year</label>
+            <input type="date" class="startYearMasters">
+            <label for="mastersDegreeEndYear" class="mastersDegreeEndYear">End Year</label>
+            <input type="date" class="endYearMasters">   <br>   
+          </div>
+        </div>
+      </div>
+
+      <button id="toggleEducationDetails" type="button">
+        Hide Education Menu
+      </button>
+
+
+      <div id="experienceDiv">
+        <h2>Experience</h2>
+        <div class="experienceDetails">
+          <div class="firstExperienceDiv">
+            <label for="firstExperience" class="firstExperience">Organization Name:</label>
+            <input type="text" class="firstOrganization" placeholder="Organization Name">
+      
+            <label for="firstOrganizationDesig" class="firstOrganizationDesig">Designation</label>
+            <input type="text" class="firstOrganizationDesignation" placeholder="Designation">
+      
+            <label for="jobStartDate1stOrganization" class="jobStartDate1stOrganization">Start Date</label>
+            <input type="date" class="jobStartDate1">
+      
+            <label for="jobEndDate1stOrganization" class="jobEndDate1stOrganization">End Year</label>
+            <input type="date" class="jobEndDate1">
+      
+            <h4>Job Description:</h4>
+            <textarea name="firstJobJD" class="firstJobJD" placeholder="Enter brief job description"></textarea>
+          </div>
+      
+      
+        </div>
+      
+      
+      </div> 
+
+      <button id="toggleExperience" type="button">Hide Experience Menu</button>
+
+
+
+
+
+
+      <button id="generateResumeButton" type="submit">Generate Resume</button>
+
+    </form>
+
+    <div class="resumeOutput">
+      
+    </div>
+    
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
